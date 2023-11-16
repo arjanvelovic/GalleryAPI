@@ -1,0 +1,46 @@
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+    padding: 0;
+}
+
+#logo{
+    max-inline-size: 60px;
+}
+
+.imgcontainer {
+    position: relative;
+}
+
+.centered-and-cropped { 
+    object-fit: cover;
+    height: 100%;
+    max-height: 360px;
+    display: block;
+    width: 100%;
+}
+
+.form-control{
+    font-size:15px;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1;
+    width: 97.5%;
+    transition: .75s ease;
+    opacity:0;
+    color: white;
+    font-size: 15px;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 0px;
+}
+  
+  /* When you mouse over the container, fade in the overlay title */
+.imgcontainer:hover .overlay {
+    opacity: 1;
+}
